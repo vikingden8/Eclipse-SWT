@@ -1,7 +1,6 @@
 package com.viking.swt;
 
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 
@@ -9,27 +8,25 @@ import org.eclipse.swt.widgets.Shell;
  * Author : Viking Den <vikingden7@gmail.com>
  * Date : 2017/3/30
  */
-public class Example001 {
+public abstract class BaseExample {
 
-    public static void main(String[] args){
+    protected void createBase(){
         Display display = new Display() ;
-        Shell shell = new Shell(display) ;
+        Shell shell = new Shell(display , SWT.SHELL_TRIM) ;
 
-        shell.setText("Hello , Eclipse SWT.");
 
-        Button button = new Button(shell , SWT.CENTER) ;
-        button.setText("Welcome to Eclipse SWT world.");
-
-        button.pack();
+        createWidget(shell) ;
 
         shell.pack();
         shell.open();
 
-        while(!shell.isDisposed()){
+        while (!shell.isDisposed()){
             if (!display.readAndDispatch()){
                 display.sleep() ;
             }
         }
         display.dispose();
     }
+
+    protected abstract void createWidget(Shell shell) ;
 }
