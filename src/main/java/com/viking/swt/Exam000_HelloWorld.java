@@ -17,11 +17,11 @@ import org.eclipse.swt.widgets.*;
  * This example demonstrates the minimum amount of code required
  * to open an SWT Shell and process the events.
  */
-public class Example000_HelloWorld {
+public class Exam000_HelloWorld {
 
 public static void main (String [] args) {
 	Display display = new Display ();
-	Shell shell = new Example000_HelloWorld().open (display);
+	Shell shell = new Exam000_HelloWorld().open (display);
 	while (!shell.isDisposed ()) {
 		if (!display.readAndDispatch ()) display.sleep ();
 	}

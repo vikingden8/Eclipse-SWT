@@ -2,17 +2,16 @@ package com.viking.swt;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Button;
-import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 
 /**
  * Author : Viking Den <vikingden7@gmail.com>
  * Date : 2017/3/30
  */
-public class Example001_HelloWorld extends BaseExample{
+public class Exam001_HelloWorld extends BaseExample{
 
     public static void main(String[] args){
-        Example001_HelloWorld exam_001 = new Example001_HelloWorld() ;
+        Exam001_HelloWorld exam_001 = new Exam001_HelloWorld() ;
         exam_001.createBase();
     }
 

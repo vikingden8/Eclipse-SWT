@@ -10,10 +10,10 @@ import org.eclipse.swt.widgets.Shell;
  * Author : Viking Den <vikingden7@gmail.com>
  * Date : 2017/3/30
  */
-public class Example002_MultiShell extends BaseExample{
+public class Exam002_MultiShell extends BaseExample{
 
     public static void main(String[] args){
-        Example002_MultiShell exam_002 = new Example002_MultiShell() ;
+        Exam002_MultiShell exam_002 = new Exam002_MultiShell() ;
         exam_002.createBase();
     }
 
