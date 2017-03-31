@@ -18,7 +18,7 @@ public class Example002_MultiShell extends BaseExample{
     }
 
     @Override
-    protected void createWidget(Shell shell) {
+    protected void createWidget(final Shell shell) {
         shell.setText("Multi-Shell Window");
         shell.setSize(300, 200);
 
@@ -28,7 +28,7 @@ public class Example002_MultiShell extends BaseExample{
             @Override
             public void widgetSelected(SelectionEvent selectionEvent) {
                 super.widgetSelected(selectionEvent);
-                createChildShell(shell ) ;
+                createChildShell(shell) ;
             }
         });
         addBtn.pack();
