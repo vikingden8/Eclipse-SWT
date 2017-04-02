@@ -34,9 +34,12 @@ public class Exam017_GridLayout extends BaseExample {
 
         Button btn = new Button(shell , SWT.NONE) ;
         btn.setText("B01");
-        btn.setLayoutData(new GridData(100, 30));
+        GridData gridData = new GridData(100, 30) ;
+        gridData.horizontalSpan = 2 ;
+        btn.setLayoutData(gridData);
 
-        new Button(shell , SWT.NONE).setText("Button 02");
+
+//        new Button(shell , SWT.NONE).setText("Button 02");
         new Button(shell , SWT.NONE).setText("Long Text Button 03");
         new Button(shell , SWT.NONE).setText("B04");
 
