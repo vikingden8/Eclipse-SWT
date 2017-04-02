@@ -9,9 +9,10 @@ import org.eclipse.swt.widgets.Shell;
  * Date : 2017/3/30
  */
 public abstract class BaseExample {
+    Display display ;
 
     protected void createBase(){
-        Display display = new Display() ;
+        display = new Display() ;
         Shell shell = new Shell(display , SWT.SHELL_TRIM) ;
 
 
