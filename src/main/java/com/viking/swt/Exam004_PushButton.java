@@ -9,10 +9,10 @@ import org.eclipse.swt.widgets.Shell;
  * Author : Viking Den <vikingden7@gmail.com>
  * Date : 2017/3/31
  */
-public class Example004_PushButton extends BaseExample{
+public class Exam004_PushButton extends BaseExample{
 
     public static void main(String[] args){
-        Example004_PushButton pushButton = new Example004_PushButton();
+        Exam004_PushButton pushButton = new Exam004_PushButton();
         pushButton.createBase();
     }
 

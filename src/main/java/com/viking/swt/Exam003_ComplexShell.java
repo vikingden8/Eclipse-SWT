@@ -10,10 +10,10 @@ import org.eclipse.swt.widgets.Shell;
  * Author : Viking Den <vikingden7@gmail.com>
  * Date : 2017/3/31
  */
-public class Example003_ComplexShell extends BaseExample{
+public class Exam003_ComplexShell extends BaseExample{
 
     public static void main(String[] args){
-        Example003_ComplexShell exam003 = new Example003_ComplexShell() ;
+        Exam003_ComplexShell exam003 = new Exam003_ComplexShell() ;
         exam003.createBase();
     }
 

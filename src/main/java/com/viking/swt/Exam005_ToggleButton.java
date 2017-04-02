@@ -9,10 +9,10 @@ import org.eclipse.swt.widgets.Shell;
  * Author : Viking Den <vikingden7@gmail.com>
  * Date : 2017/3/31
  */
-public class Example005_ToggleButton extends BaseExample{
+public class Exam005_ToggleButton extends BaseExample{
 
     public static void main(String[] args){
-        Example005_ToggleButton exam005 = new Example005_ToggleButton() ;
+        Exam005_ToggleButton exam005 = new Exam005_ToggleButton() ;
         exam005.createBase();
     }
 
