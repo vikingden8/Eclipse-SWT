@@ -1,6 +1,7 @@
 package com.viking.swt;
 
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.layout.RowData;
 import org.eclipse.swt.layout.RowLayout;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Shell;
@@ -23,10 +24,14 @@ public class Exam016_RowLayout extends BaseExample {
         rowLayout.marginHeight = 20 ;
         rowLayout.marginWidth = 10 ;
         rowLayout.spacing = 10 ;
+        rowLayout.fill = true ;
 
         shell.setLayout(rowLayout);
 
-        new Button(shell , SWT.NONE).setText("B01");
+        Button btn = new Button(shell , SWT.NONE) ;
+        btn.setText("B01");
+        btn.setLayoutData(new RowData(100, 30));
+
         new Button(shell , SWT.NONE).setText("Button 02");
         new Button(shell , SWT.NONE).setText("Long Text Button 03");
         new Button(shell , SWT.NONE).setText("B04");
